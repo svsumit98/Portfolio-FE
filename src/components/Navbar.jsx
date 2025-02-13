@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import img from "../assets/img.jpg";
 const Navbar = () => {
   return (
-    <div className="navbar bg-gray-950 shadow-sm">
+    <div className="navbar bg-gray-950 shadow-sm px-4">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -26,11 +27,6 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a className="underline hover:text-blue-300 font-mono text-lg">
-                Projects
-              </a>
-            </li>
-            <li>
               <a
                 className="underline hover:text-blue-300 font-mono text-lg"
                 href="https://drive.google.com/file/d/1cmnQMvca6c-bhnxO7_Be0k0zrCdJf09d/view?usp=sharing"
@@ -42,37 +38,55 @@ const Navbar = () => {
             </li>
             <li>
               <a className="underline hover:text-blue-300 font-mono text-lg">
-                About
+                Contact
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <div className="cursor-pointer hover:text-blue-300 font-semibold mx-2 font-mono text-lg subpixel-antialiased">
+        <Link
+          to="/"
+          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+        >
+          About
+        </Link>
+        <Link
+          to="/project"
+          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+        >
           Projects
-        </div>
-        <a
-          href="https://drive.google.com/file/d/1cmnQMvca6c-bhnxO7_Be0k0zrCdJf09d/view?usp=sharing"
-          className="cursor-pointer hover:text-blue-300 font-semibold mx-2 font-mono text-lg subpixel-antialiased"
+        </Link>
+        <Link
+          to="https://drive.google.com/file/d/1cmnQMvca6c-bhnxO7_Be0k0zrCdJf09d/view?usp=sharing"
+          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
           target="_blank"
           rel="noopener noreferrer"
         >
           Resume
-        </a>
-        <div className="cursor-pointer hover:text-blue-300 font-semibold mx-2 font-mono text-lg subpixel-antialiased">
+        </Link>
+        <Link
+          to="/contact"
+          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+        >
           Contact
-        </div>
+        </Link>
       </div>
+
       <div className="navbar-end">
-        <div>
-          {" "}
-          <h1 className=" font-mono text-xl">Sumit_Verma</h1>{" "}
+        <div className="hidden md:block">
+          <h1 className=" font-mono text-xl">Sumit Verma</h1>
         </div>
         <img
           src={img}
           alt="Tailwind CSS Navbar component"
-          className="w-10 rounded-full ml-2"
+          className="hidden md:block w-10 rounded-full ml-2"
         />
       </div>
     </div>

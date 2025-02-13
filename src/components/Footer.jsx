@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 w-full">
       <aside className="grid-flow-col items-center">
         <svg
           width="36"
@@ -62,7 +62,7 @@ const Footer = () => {
           </svg>
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/sumit_sv06/"
           target="_blank"
           rel="noopener noreferrer"
         >
