@@ -1,69 +1,84 @@
-const AboutMe = () => {
+const About = () => {
   return (
-    <div className="bg-neutral text-neutral-content min-h-screen p-8">
-      <div className="container mx-auto max-w-4xl bg-base-200 p-8 rounded-lg shadow-lg">
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-center mb-6">About Me</h1>
-
-        {/* Description */}
-        <p className="text-lg text-gray-300 leading-relaxed text-center">
-          A results-oriented Machine Learning and Software Development
-          professional with over two years of industry experience, specializing
-          in system architecture, performance optimization, and problem-solving.
-          With a strong academic background and hands-on experience in complex
-          trading systems, I have developed expertise in technologies such as{" "}
-          <strong>C++, Python, and Shell scripting.</strong>
-          I've contributed to innovative projects like object detection using
-          Faster RCNN and speech emotion recognition. Passionate about
-          leveraging my skills to develop cutting-edge solutions.
+    <div className="max-w-5xl mx-auto p-6">
+      <div className="bg-[#1f1f1f] text-white p-8 rounded-lg">
+        <h1 className="text-4xl font-semibold text-orange-400 mb-4">
+          About Me
+        </h1>
+        <p className="text-gray-300 text-justify leading-relaxed">
+          I'm{" "}
+          <span className="font-semibold text-gray-100">Sumit Kumar Verma</span>
+          , an aspiring Software Developer with experience in building scalable
+          web applications and Application Programming Interface (API)
+          development. With a strong problem-solving mindset, I enjoy creating
+          secure, efficient, and intuitive systems that enhance user experience.
         </p>
 
-        {/* Profile Info */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-semibold">Profile:</h3>
-            <p>Machine Learning & Software Developer</p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-semibold">Education:</h3>
-            <p>Master of Technology (2023 - 2025)</p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-semibold">Languages:</h3>
-            <p>English, Hindi, Marathi</p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-semibold">Tools:</h3>
-            <p>
-              C, C++, Python, Shell Scripting, Numpy, Pandas, Jenkins, OpenCV
-            </p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-semibold">Subjects:</h3>
-            <p>
-              Machine Learning, Data Structures & Algorithms, OOP, OS & System
-              Design
-            </p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-semibold">Interests:</h3>
-            <p>Writing Code, Playing Games, Reading Books</p>
+        <div className="mt-6">
+          <h2 className="text-2xl font-semibold text-orange-400">Education</h2>
+          <div className="mt-4 space-y-4">
+            <div className="bg-neutral p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-white">
+                Master of Technology (M.Tech)
+              </h3>
+              <p className="text-gray-300">
+                Indian Institute of Information Technology, Allahabad (2023 -
+                2025)
+              </p>
+              <p className="text-gray-400">CGPA: 8.27</p>
+            </div>
+
+            <div className="bg-neutral p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-white">
+                Bachelor of Technology (B.Tech)
+              </h3>
+              <p className="text-gray-300">
+                Galgotias College of Engineering and Technology, Noida (2016 -
+                2020)
+              </p>
+              <p className="text-gray-400">CGPA: 8.17</p>
+            </div>
           </div>
         </div>
 
-        {/* LinkedIn Button */}
-        <div className="mt-6 text-center">
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-warning text-lg px-6">LinkedIn</button>
-          </a>
+        <div className="mt-6">
+          <h2 className="text-2xl font-semibold text-orange-400">Experience</h2>
+          <div className="mt-4 space-y-4">
+            <div className="bg-neutral p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-white">
+                Teaching Assistant
+              </h3>
+              <p className="text-gray-300">IIIT Allahabad (2023 - Present)</p>
+              <ul className="list-disc ml-5 text-gray-400">
+                <li>
+                  Assisted in Data Structures, Algorithms, and OOP in C++.
+                </li>
+                <li>Mentored students in coding problem-solving techniques.</li>
+              </ul>
+            </div>
+
+            <div className="bg-neutral p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-white">
+                Freelance Subject Matter Expert
+              </h3>
+              <p className="text-gray-300">Chegg India (2021 - 2023)</p>
+              <ul className="list-disc ml-5 text-gray-400">
+                <li>
+                  Provided in-depth solutions for Data Structures, Algorithms
+                  and Operating Systems queries.
+                </li>
+                <li>
+                  Debugg and optimize code with efficient problem-solving
+                  approaches.
+                </li>
+                <li>Developed scalable solutions using C, C++, and Python.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default AboutMe;
+export default About;

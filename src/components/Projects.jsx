@@ -34,7 +34,7 @@ const Projects = () => {
     <div className="w-full max-w-full md:max-w-3/4 mx-auto flex-grow flex-col items-center justify-center pt-10">
       {/* Projects Section */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-semibold text-white">My Projects</h1>
+        <h1 className="text-3xl font-bold text-white">My Projects</h1>
         <p className="text-gray-300">Here are some of my recent works</p>
       </div>
 
@@ -42,7 +42,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full md:w-2/3 lg:w-2/3 mx-auto relative border border-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+            className="w-full md:w-[400px] lg:w-[400px] min-w-[250px] mx-auto relative border border-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
           >
             {/* Project Image */}
             <a href={project.link} target="_blank" rel="noopener noreferrer">

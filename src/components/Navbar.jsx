@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import img from "../assets/img.jpg";
 const Navbar = () => {
   return (
-    <div className="navbar bg-gray-950 shadow-sm px-4">
+    <div className="navbar bg-neutral shadow-sm px-4">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -27,45 +27,73 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a
-                className="underline hover:text-blue-300 font-mono text-lg"
-                href="https://drive.google.com/file/d/1cmnQMvca6c-bhnxO7_Be0k0zrCdJf09d/view?usp=sharing"
+              <Link
+                to="/"
+                className="hover:text-orange-300 text-normal  text-gray-300 font-medium mx-4 font-sans"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="hover:text-orange-300 text-normal text-gray-300 font-medium mx-4 font-sans"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/project"
+                className="hover:text-orange-300 text-normal text-gray-300 mx-4 font-medium font-sans text-normal"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://drive.google.com/file/d/1bqVhW1A2AaQxScCup0MusXIduIDIADtK/view?usp=sharing"
+                className="hover:text-orange-300 text-normal text-gray-300 mx-4 font-medium font-sans text-normal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Resume
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="underline hover:text-blue-300 font-mono text-lg">
+              <Link
+                to="/contact"
+                className="hover:text-orange-300 text-normal text-gray-300 mx-4 font-medium font-sans text-normal"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="navbar-center">
+
+      <div className=" hidden md:block navbar-center">
         <Link
           to="/"
-          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+          className="hover:text-orange-300 text-gray-300 font-normal mx-4 font-mono"
         >
           Home
         </Link>
         <Link
           to="/about"
-          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+          className="hover:text-orange-300 text-gray-300 font-normal mx-4 font-mono"
         >
           About
         </Link>
         <Link
           to="/project"
-          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+          className="hover:text-orange-300 text-gray-300 mx-4 font-mono text-normal"
         >
           Projects
         </Link>
         <Link
-          to="https://drive.google.com/file/d/1cmnQMvca6c-bhnxO7_Be0k0zrCdJf09d/view?usp=sharing"
-          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+          to="https://drive.google.com/file/d/1bqVhW1A2AaQxScCup0MusXIduIDIADtK/view?usp=sharing"
+          className="hover:text-orange-300 text-gray-300 mx-4 font-mono text-normal"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -73,7 +101,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/contact"
-          className="hover:text-orange-300 font-semibold mx-4 font-mono text-xl"
+          className="hover:text-orange-300 text-gray-300 mx-4 font-mono text-normal"
         >
           Contact
         </Link>
@@ -81,7 +109,7 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <div className="hidden md:block">
-          <h1 className=" font-mono text-xl">Sumit Verma</h1>
+          <h1 className=" font-mono text-gray-300 text-lg">Sumit Verma</h1>
         </div>
         <img
           src={img}
