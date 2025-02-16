@@ -10,7 +10,7 @@ const Contact = () => {
       {/* Contact Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-12">
         {/* Address */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center mt-4">
           <div className="bg-gray-800 p-5 rounded-full">
             <span className="text-pink-500 text-3xl">📍</span>
           </div>
@@ -19,7 +19,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Number */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center mt-4">
           <div className="bg-gray-800 p-5 rounded-full">
             <span className="text-red-500 text-3xl">📞</span>
           </div>
@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
 
         {/* Email Address */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center mt-4">
           <div className="bg-gray-800 p-5 rounded-full">
             <span className="text-gray-300 text-3xl">✉️</span>
           </div>
@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
 
         {/* Download Resume */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center mt-4">
           <div className="bg-gray-800 p-5 rounded-full">
             <span className="text-blue-500 text-3xl">🌐</span>
           </div>
@@ -54,7 +54,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Button */}
-      <div className="mt-16 flex flex-col items-center">
+      <div className="mt-6 flex flex-col items-center">
         <p className="text-xl text-center">Have a Question?</p>
         <a
           href="mailto:svsumit98@gmail.com"
