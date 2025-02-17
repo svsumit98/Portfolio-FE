@@ -57,7 +57,7 @@ const Contact = () => {
       <div className="mt-6 flex flex-col items-center">
         <p className="text-xl text-center">Have a Question?</p>
         <a
-          href="mailto:svsumit98@gmail.com"
+          href="mailto:svsumit9810@gmail.com"
           className="bg-yellow-500 text-black px-6 py-3 mt-4 rounded-lg font-semibold hover:bg-yellow-400 transition"
         >
           Click Here
